@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
   world.Inject(*new_org);
 
   world.Resize(10,10);
-
+  world.SetupOrgCtFile("org_count.data");
   for(int update=0; update<40; update++){
     world.Update();
     std::cout << world.GetNumOrgs() << std::endl;
@@ -29,5 +29,6 @@ int main(int argc, char* argv[])
     std::cout << world.size() << std::endl;
 
   }
+
 
 }
