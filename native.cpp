@@ -22,6 +22,7 @@ int main(int argc, char* argv[])
 
   world.Resize(10,10);
   world.SetupOrgCtFile("org_count.data");
+  world.SetupCoopProbFile("coop_prob.data");
   for(int update=0; update<40; update++){
     world.Update();
     std::cout << world.GetNumOrgs() << std::endl;
